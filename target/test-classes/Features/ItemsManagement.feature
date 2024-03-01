@@ -1,3 +1,4 @@
+@regresion
 Feature: Items Management
 
 
