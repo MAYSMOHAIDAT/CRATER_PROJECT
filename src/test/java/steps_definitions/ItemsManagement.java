@@ -78,22 +78,11 @@ public class ItemsManagement {
 	@Then("The item is added to the item list table")
 	public void the_item_is_added_to_the_item_list_table() throws InterruptedException {
 		   Thread.sleep(2000);
-		   
-		   
-		   
-		
-		  
 		   items_page.items_page_filter_btn.click();
-		 
 		   utils.waitForElementToBeVisible(items_page.items_page_filter_name_box);
-		   
 		   items_page.items_page_filter_name_box.sendKeys(itemname);
-		   
 		   utils.waitUntilElementVisibleWithLocator(By.xpath("//a[text()='"+itemname+"']"));
 		   Assert.assertTrue(Driver.getDriver().findElement(By.xpath("//a[text()='"+itemname+"']")).isDisplayed());
-		   
-		   
-		   
 		   Assert.assertTrue(Driver.getDriver().findElement(By.xpath("//span[contains(text(), '"+itemprice.substring(0, 2)+"')]")).isDisplayed());
 		}
 	
@@ -114,7 +103,6 @@ public class ItemsManagement {
 	    items_page.items_page_3dot_delete_option.click();
 	    utils.waitForElementToBeVisible(items_page.items_page_delete_ok_btn);
 	    items_page.items_page_delete_ok_btn.click();
-	   
 	    utils.waitForElementToBeVisible(items_page.items_Input_noResultFound_text);
 	    Assert.assertTrue(items_page.items_Input_noResultFound_text.isDisplayed());
 		
