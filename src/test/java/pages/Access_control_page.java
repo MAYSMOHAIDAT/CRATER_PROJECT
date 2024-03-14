@@ -13,10 +13,7 @@ public class Access_control_page {
 	
 	BrowserUtils utils = new BrowserUtils();
 	
-	//Mustafa commant
-	//omar
-	//fahed
-	//hksdnmfhskdvsjdm
+	
 	public Access_control_page() {
 		PageFactory.initElements(Driver.getDriver(), this);
 	}
