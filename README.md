@@ -105,7 +105,8 @@ clean test -P<profileId>
 ```
 
 Profile example:
-```
+
+```bash
 <profiles>
   	<profile>
   		<id>api_tests</id>

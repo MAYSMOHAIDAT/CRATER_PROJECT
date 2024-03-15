@@ -82,6 +82,8 @@ public class Access_control_steps {
 	public void i_should_be_on_the_page(String menu_item) {
 	String classValue=Driver.getDriver().findElement(By.xpath("//a[text()='"+menu_item+"']")).getAttribute("class");
 	Assert.assertTrue(classValue.contains("active"));
+	
+	Assert.fail();
 		
 		
 		
